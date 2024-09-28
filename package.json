@@ -4,7 +4,7 @@
   "description": "atividade express 2",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./src/index"
+    "dev": "nodemon ./src/index"
   },
   "author": "wesley",
   "license": "ISC",
