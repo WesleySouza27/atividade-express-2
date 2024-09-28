@@ -84,6 +84,8 @@ app.get('/cars/marca/:marca', (request, response) => {
     return response.status(200).send(formattedCars.join('\n'))
 })
 
+
+// atualizar cor e preço do veiculo
 app.put('/cars/id/:id', (request, response) => {
 
     const { id } = request.params
@@ -105,6 +107,8 @@ app.put('/cars/id/:id', (request, response) => {
     }
 })
 
+
+// deletar carros
 app.delete('/cars/id/:id', (request, response) => {
     const { id } = request.params
 
@@ -118,7 +122,7 @@ app.delete('/cars/id/:id', (request, response) => {
     }
 })
 
-
+// criar usuário
 app.post('/users', async (request, response) => {
     try {
         const {nome, email, senha} = request.body
@@ -159,6 +163,8 @@ app.post('/users', async (request, response) => {
     }
 })
 
+
+// loguar 
 app.post('/login', async (request,response) => {
     try {
         const { email, senha} = request.body
