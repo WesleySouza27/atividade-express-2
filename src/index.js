@@ -164,7 +164,7 @@ app.post('/users', async (request, response) => {
 })
 
 
-// loguar 
+// login
 app.post('/login', async (request,response) => {
     try {
         const { email, senha} = request.body
